@@ -1,0 +1,88 @@
+.container {
+  padding: 32rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #1a1d24;
+  margin: 16rpx 0 20rpx;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  border: 2rpx solid #e6e9ff;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+
+.card-name {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #1a1d24;
+}
+
+.card-tag {
+  font-size: 22rpx;
+  padding: 4rpx 16rpx;
+  border-radius: 24rpx;
+}
+
+.tag-safe {
+  background: #e8f7ee;
+  color: #1f9d55;
+}
+
+.tag-danger {
+  background: #ffeaea;
+  color: #e0564b;
+}
+
+.tag-warn {
+  background: #fff4e0;
+  color: #d68910;
+}
+
+.card-block {
+  margin-top: 10rpx;
+}
+
+.block-label {
+  font-size: 22rpx;
+  color: #8a92a3;
+  margin-bottom: 4rpx;
+}
+
+.block-text {
+  font-size: 26rpx;
+  line-height: 1.7;
+  color: #444a58;
+}
+
+.tips {
+  background: #ffffff;
+  border-radius: 18rpx;
+  padding: 24rpx;
+  border: 2rpx solid #e6e9ff;
+}
+
+.tip {
+  font-size: 26rpx;
+  line-height: 1.9;
+  color: #444a58;
+}
+
+.foot-note {
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #b0b6c3;
+}

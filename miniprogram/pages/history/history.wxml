@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="empty" wx:if="{{!list.length}}">暂无历史记录，去首页发起一次问诊吧</view>
+
+  <view class="item" wx:for="{{list}}" wx:key="index">
+    <view class="item-head" bindtap="toggle" data-idx="{{index}}">
+      <view class="item-dx">{{item.diagnosis}}</view>
+      <view class="item-time">{{item.time}} · {{item.latency}}s</view>
+    </view>
+    <view class="item-q">问：{{item.question}}</view>
+    <view class="item-a" wx:if="{{expanded === index}}">{{item.answer}}</view>
+  </view>
+
+  <button class="btn-clear" wx:if="{{list.length}}" bindtap="clearAll">清空历史记录</button>
+</view>

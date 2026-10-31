@@ -1,0 +1,23 @@
+page {
+  background: #f4f5f8;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  color: #1a1d24;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+.container {
+  padding: 32rpx;
+}
+
+.btn-primary {
+  background: #4b63ff;
+  color: #ffffff;
+  border-radius: 18rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 2.6;
+}
+.btn-primary:active {
+  opacity: 0.85;
+}

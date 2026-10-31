@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="hero">
+    <view class="logo">肤</view>
+    <view class="title">皮肤健康助手</view>
+    <view class="subtitle">AI 辅助皮肤病变识别 · 仅供学习研究</view>
+  </view>
+
+  <view class="actions">
+    <button class="btn btn-take" bindtap="takePhoto">拍照问诊</button>
+    <button class="btn btn-album" bindtap="chooseFromAlbum">从相册选择</button>
+  </view>
+
+  <view class="entries">
+    <view class="entry" bindtap="goHistory">
+      <view class="entry-title">历史记录</view>
+      <view class="entry-desc">查看过往的问答</view>
+    </view>
+    <view class="entry" bindtap="goScience">
+      <view class="entry-title">皮肤科普</view>
+      <view class="entry-desc">常见皮肤病知识</view>
+    </view>
+  </view>
+
+  <view class="disclaimer">本工具仅用于学习研究，结果不构成医疗建议；如有皮肤不适，请及时就医。</view>
+</view>

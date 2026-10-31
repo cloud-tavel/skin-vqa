@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ask/ask",
+    "pages/history/history",
+    "pages/knowledge/knowledge"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4b63ff",
+    "navigationBarTitleText": "皮肤健康助手",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f4f5f8",
+    "backgroundTextStyle": "dark"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

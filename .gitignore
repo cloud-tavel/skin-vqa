@@ -1,0 +1,51 @@
+# ---- 数据与模型权重（不公开） ----
+images/
+data/images/
+split/
+models/
+adapters/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# ---- 压缩包与上传包 ----
+*.zip
+*.tar
+*.tar.gz
+*.7z
+upload_pkg/
+test_set/
+
+# ---- 密钥与凭证（严禁提交） ----
+ssh_key/
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.env
+.env.*
+
+# ---- 结题材料与内部文档 ----
+结题材料/
+*.docx
+*.pptx
+*.pdf
+
+# ---- 日志与缓存 ----
+logs/
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# ---- 小程序私有配置 ----
+project.private.config.json
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+desktop.ini

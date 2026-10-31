@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="img-box">
+    <image class="preview" src="{{imgPath}}" mode="aspectFit" wx:if="{{imgPath}}" />
+    <view class="img-empty" wx:else>未选择图片</view>
+    <view class="btn-repick" bindtap="repick">重选图片</view>
+  </view>
+
+  <view class="chats" wx:if="{{chats.length}}">
+    <view class="chat {{item.role === 'user' ? 'chat-user' : 'chat-bot'}}" wx:for="{{chats}}" wx:key="index">
+      <view class="chat-role">{{item.role === 'user' ? '我' : (item.turns ? '助手 · 第' + item.turns + '轮' : '助手')}}</view>
+      <view class="chat-bubble">
+        <view class="chat-dx" wx:if="{{item.diagnosis}}">{{item.diagnosis}}</view>
+        <text class="chat-text">{{item.text}}</text>
+        <view class="chat-meta" wx:if="{{item.latency}}">耗时 {{item.latency}} 秒</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="question-box">
+    <view class="question-header">
+      <view class="question-label">{{chats.length ? '继续追问' : '文字提问'}}</view>
+      <view class="voice-btn {{recording ? 'voice-btn-recording' : ''}}" bindtap="toggleRecord">
+        <view class="voice-icon">{{recording ? '■' : '🎤'}}</view>
+        <view class="voice-text">{{recording ? '停止' : '语音提问'}}</view>
+      </view>
+    </view>
+    <textarea
+      class="question"
+      placeholder="{{chats.length ? '可继续追问，例如：需要马上去医院吗？' : '描述你的疑问，例如：这是什么皮肤病？（也可点击上方语音按钮说出问题）'}}"
+      value="{{question}}"
+      bindinput="onInput"
+      maxlength="200"
+    />
+    <view class="voice-tip" wx:if="{{recording}}">正在聆听，请说出你的问题...</view>
+  </view>
+
+  <button class="btn-submit" bindtap="submit" disabled="{{loading}}">
+    {{loading ? '分析中，请稍候...' : (chats.length ? '继续追问' : '开始分析')}}
+  </button>
+
+  <view class="error" wx:if="{{error}}">{{error}}</view>
+
+  <view class="disclaimer">结果仅供学习参考，不替代专业医疗意见</view>
+</view>

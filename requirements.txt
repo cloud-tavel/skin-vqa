@@ -1,0 +1,18 @@
+# 训练与评估
+torch>=2.4
+transformers==4.51.3
+peft>=0.10
+accelerate>=0.30
+qwen-vl-utils>=0.0.8
+
+# 后端服务
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart>=0.0.9
+requests>=2.31
+
+# 可选：vLLM 部署（需与本机 CUDA 版本匹配）
+# vllm==0.8.5.post1
+
+# 可选：语音转写（腾讯云一句话识别）
+# tencentcloud-sdk-python-asr

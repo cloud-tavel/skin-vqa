@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="section-title">七类常见皮肤病变</view>
+
+  <view class="card" wx:for="{{lesions}}" wx:key="name">
+    <view class="card-head">
+      <view class="card-name">{{item.name}}</view>
+      <view class="card-tag tag-{{item.color}}">{{item.nature}}</view>
+    </view>
+    <view class="card-block">
+      <view class="block-label">典型特征</view>
+      <view class="block-text">{{item.desc}}</view>
+    </view>
+    <view class="card-block">
+      <view class="block-label">就医建议</view>
+      <view class="block-text">{{item.advice}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">日常防护提示</view>
+  <view class="tips">
+    <view class="tip" wx:for="{{tips}}" wx:key="index">· {{item}}</view>
+  </view>
+
+  <view class="foot-note">内容基于 HAM10000 数据集公开医学资料整理，仅供科普参考</view>
+</view>

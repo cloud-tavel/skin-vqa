@@ -1,0 +1,115 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80rpx 48rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80rpx;
+}
+
+.logo {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 36rpx;
+  background: linear-gradient(135deg, #4b63ff, #7a5af5);
+  color: #ffffff;
+  font-size: 64rpx;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16rpx 40rpx rgba(75, 99, 255, 0.35);
+  margin-bottom: 32rpx;
+}
+
+.title {
+  font-size: 44rpx;
+  font-weight: 700;
+  color: #1a1d24;
+}
+
+.subtitle {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #8a92a3;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+  margin-bottom: 64rpx;
+}
+
+.btn {
+  border-radius: 20rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  line-height: 2.8;
+}
+.btn::after {
+  border: none;
+}
+
+.btn-take {
+  background: #4b63ff;
+  color: #ffffff;
+  box-shadow: 0 12rpx 32rpx rgba(75, 99, 255, 0.3);
+}
+.btn-take:active {
+  opacity: 0.85;
+}
+
+.btn-album {
+  background: #ffffff;
+  color: #4b63ff;
+  border: 2rpx solid #4b63ff;
+}
+.btn-album:active {
+  background: #eef1ff;
+}
+
+.entries {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.entry {
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 28rpx 32rpx;
+  box-shadow: 0 2rpx 12rpx rgba(20, 24, 40, 0.04);
+}
+.entry:active {
+  background: #eef1ff;
+}
+
+.entry-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1a1d24;
+}
+
+.entry-desc {
+  margin-top: 4rpx;
+  font-size: 24rpx;
+  color: #8a92a3;
+}
+
+.disclaimer {
+  margin-top: auto;
+  padding-top: 48rpx;
+  font-size: 22rpx;
+  color: #b0b6c3;
+  text-align: center;
+}
