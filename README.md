@@ -5,6 +5,14 @@
 > **大学生创新训练计划项目**（校级一般项目 · 江南大学 · 人工智能专业）
 > 项目负责人：张景皓　指导教师：潘祥 副教授
 
+## 界面
+
+| 首页 | 皮肤科普 |
+|---|---|
+| <img src="docs/images/home.png" width="300"> | <img src="docs/images/knowledge.png" width="300"> |
+
+小程序为原生开发，支持拍照 / 相册选图、语音提问、多轮追问与历史记录；问答结果页会返回结构化诊断与就医建议。
+
 ## 效果
 
 ### 诊断准确率（7 类皮肤病变）
@@ -65,6 +73,7 @@ skin-vqa/
 │   └── requirements-server.txt
 ├── miniprogram/                # 微信小程序前端
 └── docs/
+    ├── images/                 # 界面截图
     └── experiments.md          # 实验记录与结论
 ```
 
