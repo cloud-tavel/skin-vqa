@@ -1,6 +1,7 @@
 # ---- 数据与模型权重（不公开） ----
-images/
+/images/
 data/images/
+!docs/images/
 split/
 models/
 adapters/
